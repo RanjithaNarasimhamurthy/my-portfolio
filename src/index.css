@@ -1,0 +1,57 @@
+/* index.css */
+
+/* Dark‑mode defaults (when no data-theme or data-theme="dark") */
+:root {
+  --bg:               #1a202c;
+  --card-bg:          #2d3748;
+  --text:             #edf2f7;
+  --text-muted:       #a0aec0;
+  --accent:           #9f7aea;
+  --accent2:          #ed64a6;
+  --gradient:         linear-gradient(90deg, var(--accent), var(--accent2));
+
+  /* hero-specific overlays */
+  --overlay-bg:       rgba(0, 0, 0, 0.6);
+  --card-overlay-bg:  rgba(26, 32, 44, 0.85);
+}
+
+/* Light‑mode overrides */
+:root[data-theme="light"] {
+  --bg:               #ffffff;
+  --card-bg:          #f7fafc;
+  --text:             #1a202c;
+  --text-muted:       #4a5568;
+  --accent:           #7f5af0;
+  --accent2:          #ec4899;
+  --gradient:         linear-gradient(90deg, var(--accent), var(--accent2));
+
+  --overlay-bg:       rgba(255, 255, 255, 0.6);
+  --card-overlay-bg:  rgba(255, 255, 255, 0.85);
+}
+
+/* Reset & base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+a:hover {
+  color: var(--accent2);
+}
+
+main {
+  padding-top: 4rem; /* match nav height */
+}
