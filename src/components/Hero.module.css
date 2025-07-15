@@ -115,3 +115,52 @@
   .buttons a { width: 100%; text-align: center; }
   .socials   { font-size: 1.25rem; }
 }
+/* ————————————————————————————————
+   Mobile responsiveness for Hero
+———————————————————————————————— */
+
+@media (max-width: 768px) {
+  .hero {
+    /* let content dictate height, and add some breathing room */
+    height: auto;
+    padding: 2rem 1rem;
+  }
+
+  .contentCard {
+    /* less padding so it’s not too tall */
+    padding: 1.5rem;
+    width: 100%;
+  }
+
+  .greeting {
+    font-size: 1rem;
+  }
+
+  .title {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+  }
+
+  .btnPrimary,
+  .btnSecondary {
+    width: 100%;
+  }
+
+  .socials {
+    /* allow wrapping if necessary */
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-size: 1.25rem;
+  }
+}

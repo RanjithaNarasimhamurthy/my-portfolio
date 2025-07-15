@@ -28,7 +28,7 @@ export default function About() {
       </div>
           <a
             href="/Resume-RanjithaNarasimhamurthy.pdf"
-            download="Ranjitha_Narasimhamurthy_Resume.pdf"
+            download="Resume-RanjithaNarasimhamurthy.pdf"
             className={styles.button}
           >
             Download Resume
