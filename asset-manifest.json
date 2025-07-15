@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/my-portfolio/static/css/main.5ca19a26.css",
+    "main.js": "/my-portfolio/static/js/main.55321f67.js",
+    "static/media/image3.png": "/my-portfolio/static/media/image3.2ffc5f225e2e7532cb88.png",
+    "static/media/uask.png": "/my-portfolio/static/media/uask.06b6563bd3c79dfa2e4b.png",
+    "static/media/loan.png": "/my-portfolio/static/media/loan.1348c7d4847b9b204be4.png",
+    "static/media/air.png": "/my-portfolio/static/media/air.c677410d4cc406b59179.png",
+    "static/media/phone.png": "/my-portfolio/static/media/phone.0b49049c37b814f676bb.png",
+    "static/media/ranjitha.jpg": "/my-portfolio/static/media/ranjitha.b215013f7c17f7a170e4.jpg",
+    "static/media/task.png": "/my-portfolio/static/media/task.bddd664fbf5dde5ea11e.png",
+    "static/media/shopping.png": "/my-portfolio/static/media/shopping.845f667f82828faa9ad7.png",
+    "static/media/reddit.png": "/my-portfolio/static/media/reddit.d5f3597e57f942f9a49e.png",
+    "static/media/optimizing.png": "/my-portfolio/static/media/optimizing.561fae34f095c55b84b8.png",
+    "static/media/raid.png": "/my-portfolio/static/media/raid.59975b977676758b273f.png",
+    "static/media/llvm.png": "/my-portfolio/static/media/llvm.b30973c6e71db4aacaeb.png",
+    "static/media/varcons.png": "/my-portfolio/static/media/varcons.232cb21d189c5b3e98e1.png",
+    "static/media/research.png": "/my-portfolio/static/media/research.53629851a04ad1dd592d.png",
+    "index.html": "/my-portfolio/index.html",
+    "main.5ca19a26.css.map": "/my-portfolio/static/css/main.5ca19a26.css.map",
+    "main.55321f67.js.map": "/my-portfolio/static/js/main.55321f67.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5ca19a26.css",
+    "static/js/main.55321f67.js"
+  ]
+}
