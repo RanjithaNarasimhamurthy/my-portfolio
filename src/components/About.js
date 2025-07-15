@@ -26,11 +26,11 @@ export default function About() {
           Looking ahead, I’m focused on emerging areas at the intersection of cloud computing and machine learning—building self-healing systems that adapt in real time to shifting workloads and data patterns. My goal is to architect robust, AI-driven platforms that empower businesses to make smarter decisions and deliver truly personalized experiences. In parallel, I’m exploring distributed ledger technologies to enhance data integrity and privacy. Ultimately, I aspire to lead an engineering team where I can mentor others, drive open-source innovation, and translate cutting-edge research into production-grade software that tackles real-world challenges.
         </p>
       </div>
-          <a
-            href="/Resume-RanjithaNarasimhamurthy.pdf"
-            download="Resume-RanjithaNarasimhamurthy.pdf"
-            className={styles.button}
-          >
+         <a
+           href={`${process.env.PUBLIC_URL}/Resume-RanjithaNarasimhamurthy.pdf`}
+           download="Resume-RanjithaNarasimhamurthy.pdf"
+           className={styles.button}
+         >
             Download Resume
           </a>
         </div>
