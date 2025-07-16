@@ -3,24 +3,24 @@ import React from 'react';
 import styles from './Certifications.module.css';
 
 const certifications = [
-  {
-    name: 'Python for Everybody',
-    issuer: 'University of Michigan (Coursera)',
-    date: 'Jul 2020',
-    link: 'https://coursera.org/verify/NEPU4VNDG6L5'
-  },
+  // {
+  //   name: 'Python for Everybody',
+  //   issuer: 'University of Michigan (Coursera)',
+  //   date: 'Jul 2020',
+  //   link: 'https://coursera.org/verify/NEPU4VNDG6L5'
+  // },
   {
     name: 'Python for Everybody Specialization',
     issuer: 'University of Michigan (Coursera)',
     date: 'Jul 2020',
     link: 'https://coursera.org/verify/NEPU4VNDG6L5'
   },
-  {
-    name: 'Programming Foundations with JavaScript, HTML and CSS',
-    issuer: 'Duke University (Coursera)',
-    date: 'Jul 2020',
-    link: 'https://coursera.org/verify/VF45U8CZHZDH'
-  },
+  // {
+  //   name: 'Programming Foundations with JavaScript, HTML and CSS',
+  //   issuer: 'Duke University (Coursera)',
+  //   date: 'Jul 2020',
+  //   link: 'https://coursera.org/verify/VF45U8CZHZDH'
+  // },
   {
     name: 'Java Programming: Solving Problems with Software',
     issuer: 'Duke University (Coursera)',

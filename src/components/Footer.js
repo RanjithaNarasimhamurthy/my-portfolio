@@ -11,7 +11,7 @@ export default function Footer() {
         <div className={styles.col}>
           <h4 className={styles.heading}>About Me</h4>
           <p>Ranjitha Narasimhamurthy</p>
-          <p>Software Engineer | Backend Dev | Cloud Enthusiast</p>
+          <p>Software Engineer | Backend Dev | Cloud & ML Enthusiast</p>
           <ul className={styles.contactList}>
             <li>
               <FiGithub />{' '}
@@ -46,6 +46,7 @@ export default function Footer() {
         <div className={styles.col}>
           <h4 className={styles.heading}>Quick Links</h4>
           <ul className={`${styles.list} ${styles.quickList}`}>
+          
             {['about','education','skills','experience','projects','contact'].map(link => (
               <li key={link}>
                 <a href={`#${link}`}>
@@ -61,7 +62,7 @@ export default function Footer() {
           <h4 className={styles.heading}>Featured Projects</h4>
           <ul className={styles.list}>
             {[
-              'Optimizing Retail Strategies',
+              'E-Commerce Mobile App',
               'Reddit Search Engine',
               'Compiler Optimization',
               'Scalable Task Scheduler'

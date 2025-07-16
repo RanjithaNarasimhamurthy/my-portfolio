@@ -11,37 +11,37 @@ const educationData = [
     // gpa: '3.66 / 4.00',
     courses: [
       {
-        name: 'Artificial Intelligence',
-        desc: 'Study of algorithms and models that enable machines to perform tasks requiring human‐like intelligence.',
-      },
-      {
-        name: 'Compiler Construction',
-        desc: 'Designing and implementing compilers to translate high-level code into executable form.',
-      },
-      {
-        name: 'Big Data Management',
-        desc: 'Techniques and architectures for storing, querying, and processing vast datasets efficiently.',
-      },
-      {
-        name: 'Information Retrieval',
-        desc: 'Algorithms and data structures for indexing, searching, and ranking textual information.',
-      },
-      {
-        name: 'Design & Analysis of Algorithms',
-        desc: 'Mathematical methods to design algorithms and rigorously analyze their time and space complexity.',
-      },
-      {
-        name: 'Foundations of Machine Learning',
-        desc: 'Core theories behind supervised and unsupervised learning, including statistical and optimization approaches.',
-      },
-      {
-        name: 'Data Mining Techniques',
-        desc: 'Methods for discovering patterns, associations, and insights from large-scale data.',
-      },
-      {
-        name: 'Spatial Computing',
-        desc: 'Computational strategies for representing, querying, and visualizing spatial (geographic) data.',
-      },
+      name: 'Artificial Intelligence',
+      desc: 'Studied predicate logic, machine learning techniques, and informed search algorithms.',
+    },
+    {
+      name: 'Compiler Construction',
+      desc: 'Worked hands‑on with LLVM: parsing, constant propagation, SSA transformations, and code generation.',
+    },
+    {
+      name: 'Big Data Management',
+      desc: 'Explored distributed storage, fault tolerance, data‐processing frameworks, and scalable analytics.',
+    },
+    {
+      name: 'Information Retrieval',
+      desc: 'Algorithms and data structures for indexing, searching, and ranking textual information.',
+    },
+    {
+      name: 'Design & Analysis of Algorithms',
+      desc: 'Mathematical methods to design algorithms and rigorously analyze their time and space complexity.',
+    },
+    {
+      name: 'Foundations of Machine Learning',
+      desc: 'Core theories behind supervised and unsupervised learning, including statistical and optimization approaches.',
+    },
+    {
+      name: 'Data Mining Techniques',
+      desc: 'Methods for discovering patterns, associations, and insights from large-scale data.',
+    },
+    {
+      name: 'Spatial Computing',
+      desc: 'Computational strategies for representing, querying, and visualizing spatial (geographic) data.',
+    },
     ],
   },
   {

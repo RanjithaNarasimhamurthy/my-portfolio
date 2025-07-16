@@ -15,7 +15,7 @@ import eduCrawlerImg  from '../assets/research.png';
 import uaskImg  from '../assets/uask.png';
 import raidImg  from '../assets/raid.png';
 import loanImg  from '../assets/loan.png';
-const projects = [
+const allProjects = [
  
   {
   name: 'E-Commerce Mobile App',
@@ -40,31 +40,17 @@ const projects = [
     // 'Set up a GitHub Actions pipeline to build, test, and package Android APKs and iOS archives on every push, streamlining releases and guaranteeing consistent builds.'
   ],
 },
- {
-    name: 'Phone Book Application',
-    image: phoneBookImg,
-    link: 'https://github.com/RanjithaNarasimhamurthy/PhoneBookApplication',
-    tech: [
-      'C#',
-      'ASP.NET Core MVC',
-      'Entity Framework Core',
-      'SQL Server'
-    ],
-    details: [
-      'Built a full-stack ASP.NET Core MVC phone-book app enabling administrators to view, add, edit and delete contacts.',
-      'Structured data access via EF Core Code-First: defined POCO models, a DbContext, repository interfaces and a data layer for clean separation of concerns.',
-      'Created Razor views and a shared partial layout to display admin info, contact lists, forms with validation, and confirmation prompts in a consistent UI.',
-      'Implemented search by contact attributes, incremental IDs, and CRUD workflows (Create/Edit/Delete) with user-friendly feedback and error handling.'
-    ]
-  },
+ 
   {
     name: 'Reddit Search Engine',
     image: redditImg,
     link: 'https://github.com/RanjithaNarasimhamurthy/RedditSearchEngineWebApp',
-    tech: ['PyLucene', 'BERT', 'Flask'],
+    tech: ['PyLucene','Web Crawling', 'BERT', 'Flask','FAISS'],
     details: [
-      'Developed a hybrid Reddit search engine using PyLucene for keyword retrieval and BERT+FAISS for semantic search with contextual embeddings.',
-      'Built a Flask web interface for real-time querying and comparison of NLP methods in ranking, speed, and scalability.'
+     'Developed a hybrid Reddit search engine using PyLucene for keyword retrieval and BERT+FAISS for semantic search with contextual embeddings.',
+    'Built a Flask web interface for real-time querying and comparison of NLP methods in ranking, speed, and scalability.',
+    'Crawled and managed Reddit posts and comments using PRAW in 10 MB data chunks, ensuring efficient data ingestion and preprocessing for indexing.',
+    'Benchmarked and compared PyLucene inverted–index vs. BERT+FAISS semantic search on indexing time (~30 s), query latency, and result relevance, highlighting key performance trade‑offs.'
     ],
   },
   {
@@ -88,22 +74,29 @@ const projects = [
   ],
 },
 {
-    name: 'Web Crawler & Search Engine (.edu Research)',
-    image: eduCrawlerImg,
-    link: 'https://github.com/RanjithaNarasimhamurthy/ResearchSearchEngine',
-    tech: [
-      'Python',
-      'BeautifulSoup',
-      'PyLucene',
-      'Flask'
-    ],
+    name: 'Compiler Optimization with LLVM',
+    image: llvmImg,
+    link: 'https://github.com/RanjithaNarasimhamurthy/LLVM',
+    tech: ['LLVM', 'C++', 'Static Analysis'],
     details: [
-      'Implemented a breadth-first Python crawler for .edu research sites: normalized URLs, hashed them for deduplication, filtered for HTML, and saved raw pages into `./data/html_pages` with SHA-256 filenames.',
-      'Built a PyLucene indexer to tokenize & index page titles and bodies, applying BM25 ranking and custom snippet generation for relevant context previews.',
-      'Created a Flask web UI exposing a keyword search box that returns top-10 results with titles, URLs, and contextual snippets from the Lucene index.',
-      'Structured the repo into three modules—crawler, indexer, and web app—with platform scripts for Windows (`crawler.bat`) and macOS/Linux (`indexer.sh`, `app.py`).'
-    ]
+      'Developed LLVM compiler passes for constant propagation and SSA‑based optimizations, improving execution efficiency by 30% and refining debugging techniques for system performance.',
+    'Collaborated on a 3‑phase project—analysis, transformation, and validation—to enhance overall compiler optimizations.',
+    'Built an automated test harness (create_input.sh & test.sh) to convert C code to LLVM IR and run each pass via `opt`, ensuring correctness across hundreds of sample programs.',
+    'Leveraged LLVM’s FunctionPass API to traverse functions, iterate basic blocks and instructions, cast operands for analysis, and use predecessor/successor calls for advanced control‑flow optimizations.'
+    ],
   },
+  {
+    name: 'Scalable Task Scheduler',
+    image: schedulerImg,
+    tech: ['AWS Lambda', 'DynamoDB'],
+    details: [
+      'Designed a serverless task queue using AWS Lambda, API Gateway, and DynamoDB to enable asynchronous task scheduling with sub-second latency.',
+    'Secured RESTful APIs and integrated CloudWatch for logging and monitoring, achieving 99.9% uptime.',
+    'Leveraged DynamoDB Time To Live (TTL) and Global Secondary Indexes to auto-expire completed tasks and efficiently query pending jobs, cutting storage costs by 40%.',
+    'Built a retry mechanism with exponential backoff and hooked in AWS SNS/SQS dead-letter queues for failed jobs, ensuring robust error handling and eventual consistency.'
+    ],
+  },
+
 {
   name: 'Virtual Air Sketching',
   image: virtualAirImg, // import this from your assets, e.g.:
@@ -161,6 +154,53 @@ const projects = [
       'Demonstrated real-world use-cases: POI search (“quiet cafes”), disaster response (“flooded” tweets), and targeted marketing (“vegan” reviews), with future plans for semantic ranking and dynamic updates.'
     ]
   },
+  
+  
+   {
+    name: 'Optimizing Retail Strategies with Big Data Analytics',
+    image: optimizingImg,
+    tech: ['Spark', 'Python', 'Scikit-learn'],
+    details: [
+      'Collaborated with a team of 4 to design a big data framework using K‑Means, Random Forest, and Decision Trees for customer segmentation, churn prediction, and sales forecasting.',
+    'Accelerated data processing using parallel computing for improved system performance and efficiency.',
+    'Built end‑to‑end PySpark pipelines for data cleansing, feature engineering, and encoding, enabling seamless scaling to multimillion‑row datasets.',
+    'Applied SHAP‑based model explainability and feature importance analysis to identify the top drivers of customer churn and loyalty, informing targeted marketing campaigns.'
+    ],
+  },
+  {
+    name: 'Phone Book Application',
+    image: phoneBookImg,
+    link: 'https://github.com/RanjithaNarasimhamurthy/PhoneBookApplication',
+    tech: [
+      'C#',
+      'ASP.NET Core MVC',
+      'Entity Framework Core',
+      'SQL Server'
+    ],
+    details: [
+      'Built a full-stack ASP.NET Core MVC phone-book app enabling administrators to view, add, edit and delete contacts.',
+      'Structured data access via EF Core Code-First: defined POCO models, a DbContext, repository interfaces and a data layer for clean separation of concerns.',
+      'Created Razor views and a shared partial layout to display admin info, contact lists, forms with validation, and confirmation prompts in a consistent UI.',
+      'Implemented search by contact attributes, incremental IDs, and CRUD workflows (Create/Edit/Delete) with user-friendly feedback and error handling.'
+    ]
+  },
+  {
+    name: 'Web Crawler & Search Engine (.edu Research)',
+    image: eduCrawlerImg,
+    link: 'https://github.com/RanjithaNarasimhamurthy/ResearchSearchEngine',
+    tech: [
+      'Python',
+      'BeautifulSoup',
+      'PyLucene',
+      'Flask'
+    ],
+    details: [
+      'Implemented a breadth-first Python crawler for .edu research sites: normalized URLs, hashed them for deduplication, filtered for HTML, and saved raw pages into `./data/html_pages` with SHA-256 filenames.',
+      'Built a PyLucene indexer to tokenize & index page titles and bodies, applying BM25 ranking and custom snippet generation for relevant context previews.',
+      'Created a Flask web UI exposing a keyword search box that returns top-10 results with titles, URLs, and contextual snippets from the Lucene index.',
+      'Structured the repo into three modules—crawler, indexer, and web app—with platform scripts for Windows  and macOS/Linux .'
+    ]
+  },
   {
     name: 'Loan Approval Prediction & Analysis',
     image: loanImg,
@@ -180,44 +220,20 @@ const projects = [
     ],
   },
 
-  {
-    name: 'Compiler Optimization with LLVM',
-    image: llvmImg,
-    link: 'https://github.com/RanjithaNarasimhamurthy/LLVM',
-    tech: ['LLVM', 'C++', 'Static Analysis'],
-    details: [
-      'Developed LLVM compiler passes for constant propagation and SSA-based optimizations, improving execution efficiency by 30% and refining debugging techniques for system performance.',
-      'Collaborated on a 3-phase project—analysis, transformation, and validation—to enhance overall compiler optimizations.'
-    ],
-  },
-  {
-    name: 'Scalable Task Scheduler',
-    image: schedulerImg,
-    tech: ['AWS Lambda', 'DynamoDB'],
-    details: [
-      'Designed a serverless task queue using AWS Lambda, API Gateway, and DynamoDB to enable asynchronous task scheduling with sub-second latency.',
-      'Secured RESTful APIs and integrated CloudWatch for logging and monitoring, achieving 99.9% uptime.'
-    ],
-  },
-   {
-    name: 'Optimizing Retail Strategies with Big Data Analytics',
-    image: optimizingImg,
-    tech: ['Spark', 'Python', 'Scikit-learn'],
-    details: [
-      'Collaborated with a team of 4 to design a big data framework using K-Means, Random Forest, and Decision Trees for customer segmentation, churn prediction, and sales forecasting.',
-      'Accelerated data processing using parallel computing for improved system performance and efficiency.'
-    ],
-  },
 ];
 
 export default function Projects() {
   const [modalProj, setModalProj] = useState(null);
+  const [showAll, setShowAll]   = useState(false);
+
+  // decide how many to render
+  const projects = showAll ? allProjects : allProjects.slice(0, 4);
 
   return (
     <section id="projects" className={styles.section}>
       <h2 className={styles.title}>Projects</h2>
       <div className={styles.grid}>
-        {projects.map((p, idx) => (
+        {projects.map(p => (
           <div
             key={p.name}
             className={styles.card}
@@ -253,8 +269,21 @@ export default function Projects() {
         ))}
       </div>
 
+      {/* toggle button */}
+      <div className={styles.showMoreWrapper}>
+        <button
+          className={styles.showMoreBtn}
+          onClick={() => setShowAll(s => !s)}
+        >
+          {showAll ? 'Show Less' : 'View More'}
+        </button>
+      </div>
+
       {modalProj && (
-        <div className={styles.modalOverlay} onClick={() => setModalProj(null)}>
+        <div
+          className={styles.modalOverlay}
+          onClick={() => setModalProj(null)}
+        >
           <div
             className={styles.modal}
             onClick={e => e.stopPropagation()}
@@ -262,9 +291,7 @@ export default function Projects() {
             <button
               className={styles.closeButton}
               onClick={() => setModalProj(null)}
-            >
-              ×
-            </button>
+            >×</button>
             <h3 className={styles.modalTitle}>{modalProj.name}</h3>
             <ul className={styles.modalTech}>
               {modalProj.tech.map(t => <li key={t}>{t}</li>)}

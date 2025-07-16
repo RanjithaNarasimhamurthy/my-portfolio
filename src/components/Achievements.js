@@ -14,7 +14,7 @@ export default function Achievements() {
               Best Project Presentation
             </div>
             <div className={styles.desc}>
-              Awarded <strong>Best Project Presentation</strong> for “Virtual Air Sketching” at B.N.M. Institute of Technology (VTU-approved).
+              Awarded <strong>Best Project Presentation</strong> for “Virtual Air Sketching” presented on Open Day Science Exhibition at B.N.M. Institute of Technology (VTU-approved).
             </div>
           </div>
         </li>
@@ -22,10 +22,10 @@ export default function Achievements() {
           <div className={styles.date}>Mar 2020</div>
           <div className={styles.content}>
             <div className={styles.heading}>
-              Freshers Fest II Prize
+              Hackathon - Freshers Fest II Prize
             </div>
             <div className={styles.desc}>
-              Won 2<sup>nd</sup> Prize  in the Technical category - Hackathon at the Freshers Fest 2019–20 induction program, at the BNMIT .
+              Won 2<sup>nd</sup> Prize  in the Technical category - Hackathon for <strong>smart waste management</strong> at the Freshers Fest 2019–20 induction program, at the BNMIT .
             </div>
           </div>
         </li>

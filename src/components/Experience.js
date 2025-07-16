@@ -13,7 +13,7 @@ const experiences = [
     period: 'Jul 2023 – Jun 2024',
     location: 'Bengaluru, India',
     details: [
-      'Built robust backend solutions using ASP.NET Web Forms, ASP.NET MVC, ASP.NET Web API, and .NET MAUI for a mining client, implementing OAuth 2.0 authentication and leveraging Firebase for storing and retrieving chemical test data with real-time updates.',
+      'Built robust backend solutions using ASP.NET Web Forms, ASP.NET MVC, ASP.NET Web API, and .NET MAUI for a mining client, implementing OAuth 2.0 authentication and leveraging Firebase for storing and retrieving  data with real-time updates.',
       'Migrated a legacy .NET Framework application by extracting Web API endpoints and rewriting the front-end in Angular (latest version), integrated OAuth-based security, and deployed static assets to Firebase Hosting, streamlining code maintainability.',
       'Developed a cross-platform shopping cart application in .NET MAUI with role-based access controls and responsive UI, allowing customers to browse products and manage orders seamlessly across desktop and mobile devices.',
       'Tested backend APIs using Postman and automated front-end UI tests with Selenium, ensuring end-to-end functionality and regression safety across releases.',
@@ -27,9 +27,11 @@ const experiences = [
     period: 'Feb 2023 – Apr 2023',
     location: 'Bengaluru, India',
     details: [
-      'Engineered a Bike Rental System backend in Spring Boot, complete with Swagger documentation and 85%+ JUnit/Mockito test coverage.',
-      'Built reusable React.js components with Axios interceptors to handle JWT authentication and token refresh flows for over 500 daily users, boosting booking efficiency by 40%.',
-      'Integrated Firebase for real-time data syncing and implemented granular access controls via OAuth 2.0, ensuring secure, user-specific access to rental data.'
+      'Conducted requirement analysis and configured the dev environment (Spring Initializer, MySQL, Node.js, VS Code & IntelliJ).',
+    'Designed and implemented RESTful Spring Boot backend: defined entities, repositories, service & controller layers, and validated endpoints via Postman.',
+    'Developed responsive React.js frontend components for user registration, authentication, bike browsing, booking management, and admin inventory controls.',
+    'Integrated frontend with backend APIs and set up Firebase authentication for secure, token‑based user login flows.',
+    'Worked in iterative sprints, completing Spring and React assignments, collaborating with mentors, and refining features based on real‑time feedback.'
     ],
   },
   {
@@ -41,7 +43,7 @@ const experiences = [
     details: [
       'Delivered a Car Service Management Platform end-to-end using Spring MVC and MySQL, including service booking, history tracking, and admin controls.',
       'Created a responsive, mobile-first React.js UI with Bootstrap for shop-floor tablets and phones, enhancing user satisfaction.',
-      'Normalized database schemas and added composite indexes on (vehicle_id, service_date) and (customer_id, last_name), resulting in a 20% reduction in query times.',
+      'Optimized database performance by normalizing schemas and adding composite indexes on key fields, reducing query times by 20%',
       'Developed a fully-functional “Template – Car Service Center Site” web template, translating design briefs into dynamic pages with database-driven data collection and sorting, and delivered it on time with strong design skills.'
     ],
   },
