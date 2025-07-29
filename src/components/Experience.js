@@ -4,7 +4,7 @@ import styles from './Experience.module.css';
 // Logos (place these under src/assets/)
 import thoughtclanLogo from '../assets/thoughtclan1.jpg';
 import varconsLogo    from '../assets/varcons.png';
-import ucrLogoLogo    from '../assets/ucr.png';
+import ucrLogo   from '../assets/ucr.png';
 
 const experiences = [
   {
