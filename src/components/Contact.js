@@ -10,7 +10,7 @@ export default function Contact() {
 
       <div className={styles.text}>
         <p>
-          I’m always open to exciting opportunities—whether it’s a full‑time role, a tech collaboration, or even just a friendly conversation.
+          I’m always open to exciting opportunities, whether it’s a full‑time role, a tech collaboration, or even just a friendly conversation.
         </p>
         <p>
           Got a challenging problem in cloud, AI, or backend systems? Let’s tackle it together.
@@ -23,7 +23,7 @@ export default function Contact() {
           <a href="mailto:rnara016@ucr.edu" className={styles.inlineLink}>
             rnara016@ucr.edu
           </a>{' '}
-          or connect on LinkedIn—let’s make something awesome happen.
+          or connect on LinkedIn! let’s make something awesome happen.
         </p>
       </div>
 
