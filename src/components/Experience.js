@@ -14,8 +14,8 @@ const experiences = [
     period: 'Summer 2025',
     location: 'Riverside, CA',
     details: [
-      'Graded weekly programming assignments and lab reports on linked lists, trees, graphs, and hash tables using Gradescope, ensuring consistent, rubric-based evaluation.',
-      'Provided detailed, constructive feedback to 100+ students per term to clarify algorithmic concepts and improve coding style.',
+      'Graded weekly programming assignments and quizzes on linked lists, trees, graphs, and hash tables , ensuring consistent, rubric-based evaluation.',
+      'Provided detailed, constructive feedback to 30+ students per term to clarify algorithmic concepts and improve coding style.',
       'Held virtual office hours twice weekly to review solutions, debug student code, and coach on complexity analysis and problem-solving strategies.',
     ],
   },
