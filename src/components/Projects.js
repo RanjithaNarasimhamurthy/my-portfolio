@@ -85,18 +85,17 @@ const allProjects = [
     'Leveraged LLVM’s FunctionPass API to traverse functions, iterate basic blocks and instructions, cast operands for analysis, and use predecessor/successor calls for advanced control‑flow optimizations.'
     ],
   },
-  {
-    name: 'Scalable Task Scheduler',
-    image: schedulerImg,
-    tech: ['AWS Lambda', 'DynamoDB'],
-    details: [
-      'Designed a serverless task queue using AWS Lambda, API Gateway, and DynamoDB to enable asynchronous task scheduling with sub-second latency.',
-    'Secured RESTful APIs and integrated CloudWatch for logging and monitoring, achieving 99.9% uptime.',
-    'Leveraged DynamoDB Time To Live (TTL) and Global Secondary Indexes to auto-expire completed tasks and efficiently query pending jobs, cutting storage costs by 40%.',
-    'Built a retry mechanism with exponential backoff and hooked in AWS SNS/SQS dead-letter queues for failed jobs, ensuring robust error handling and eventual consistency.'
-    ],
-  },
-
+ {
+  name: 'Serverless Task Scheduler',
+  image: schedulerImg,
+  tech: ['API Gateway', 'AWS Lambda', 'EventBridge Scheduler', 'DynamoDB', 'CloudWatch', 'AWS SAM'],
+  details: [
+    'Built a “set-it-and-forget-it” scheduler: create, update, cancel, and fetch one-time jobs via REST; at the exact UTC time, EventBridge Scheduler invokes a Lambda with the provided payload.',
+    'Implemented idempotent creates (idempotency keys + DynamoDB conditional writes) and least-privilege IAM where Scheduler assumes a role that can only invoke the target Lambda.',
+    'Added observability with structured CloudWatch logs and X-Ray tracing; tracked job status in DynamoDB (ACTIVE / COMPLETED / CANCELED) for easy debugging and audits.',
+    'Optimized for cost and ops using DynamoDB PAY_PER_REQUEST and TTL to auto-expire completed items; packaged everything with AWS SAM for repeatable, one-command deploys.'
+  ],
+},
 {
   name: 'Virtual Air Sketching',
   image: virtualAirImg, // import this from your assets, e.g.:
