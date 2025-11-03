@@ -7,7 +7,7 @@ const educationData = [
     institution: 'University of California, Riverside',
     location: 'California, USA',
     degree: 'Master of Science in Computer Science',
-    period: 'Sep 2024 – Dec 2025',
+    period: 'Sep 2024 – Mar 2026',
     // gpa: '3.66 / 4.00',
     courses: [
       {
