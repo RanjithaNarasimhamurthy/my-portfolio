@@ -88,6 +88,7 @@ const allProjects = [
  {
   name: 'Serverless Task Scheduler',
   image: schedulerImg,
+  link: 'https://github.com/RanjithaNarasimhamurthy/aws-task-scheduler',
   tech: ['API Gateway', 'AWS Lambda', 'EventBridge Scheduler', 'DynamoDB', 'CloudWatch', 'AWS SAM'],
   details: [
     'Built a “set-it-and-forget-it” scheduler: create, update, cancel, and fetch one-time jobs via REST; at the exact UTC time, EventBridge Scheduler invokes a Lambda with the provided payload.',
